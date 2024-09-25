@@ -50,7 +50,7 @@ function LandingPage() {
 
   return (
     <div className="container">
-      <img src={"/logo.jpg"} alt="Logo" className="logo" />
+      <img src="/logo.jpg" alt="Logo" className="logo" />
       <h1 className="text">✨Launching soon ...✨</h1>
       <div className="email">
         <input
