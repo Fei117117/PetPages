@@ -2,6 +2,7 @@ import "./landingPage.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import logo from "../../assets/logo.jpg";
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -50,7 +51,7 @@ function LandingPage() {
 
   return (
     <div className="container">
-      <img src="../../assets/logo.jpg" alt="Logo" className="logo" />
+      <img src={logo} alt="Logo" className="logo" />
       <h1 className="text">✨Launching soon ...✨</h1>
       <div className="email">
         <input
