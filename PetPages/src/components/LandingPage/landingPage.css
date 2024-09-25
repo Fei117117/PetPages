@@ -1,4 +1,4 @@
-.logo {
+#logo-landingPage {
   width: 200px;
   height: auto;
   padding: 1em;
@@ -6,21 +6,21 @@
   transition: filter 300ms;
 }
 
-.logo:hover {
+#logo-landingPage:hover {
   filter: drop-shadow(0 0 2em #d1566aaa);
 }
 
-#text {
-  font-size: 1.7em;
+#text-landingPage {
+  font-size: 1.5em;
   padding: 0.3em;
 }
 
-.email {
+#email-landingPage {
   margin-bottom: 20px;
   padding: 0.3em;
 }
 
-.email-input {
+#email-input {
   padding: 10px;
   width: 250px;
   font-size: 16px;
@@ -29,13 +29,13 @@
   margin-right: 10px;
 }
 
-.email-input:focus {
+#email-input:focus {
   outline: none;
   border-color: #d1566aaa;
   box-shadow: 0 0 5px rgba(183, 82, 92, 0.5); /* Add focus shadow */
 }
 
-.submit-button {
+#submit-button {
   padding: 10px 20px;
   font-size: 16px;
   color: #000000;
@@ -46,12 +46,12 @@
   transition: background-color 0.3s ease, transform 0.2s; /* Add transform effect */
 }
 
-.submit-button:hover {
+#submit-button:hover {
   background-color: #d1566aaa;
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
-.submit-button:focus {
+#submit-button:focus {
   outline: none;
 }
 

@@ -51,18 +51,18 @@ function LandingPage() {
 
   return (
     <div className="container">
-      <img src={logo} alt="Logo" className="logo" />
-      <h1 className="text">✨Launching soon ...✨</h1>
-      <div className="email">
+      <img src={logo} alt="Logo" id="logo-landingPage" />
+      <h1 id="text-landingPage">✨Launching soon ...✨</h1>
+      <div id="email-landingPage">
         <input
           type="email"
           placeholder="Enter your email"
           value={email}
           onChange={handleEmailChange}
-          className="email-input"
+          id="email-input"
           required
         />
-        <button onClick={handleEmailSubmit} className="submit-button">
+        <button onClick={handleEmailSubmit} id="submit-button">
           Notify Me
         </button>
         <p>{message}</p>
