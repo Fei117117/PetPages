@@ -11,7 +11,7 @@
 }
 
 #text-landingPage {
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 0.3em;
 }
 
@@ -88,4 +88,22 @@ button:focus-visible {
   height: auto; /* Maintain the aspect ratio */
   max-width: 200px; /* Set a max width for the images */
   border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  #email-input {
+    width: 100%; /* Adjust input width on smaller screens */
+  }
+
+  #submit-button {
+    width: 100%; /* Full width for submit button on mobile */
+  }
+
+  .images {
+    justify-content: space-around; /* Ensure images are evenly spaced */
+  }
+  input {
+    background-color: white;
+  }
 }
