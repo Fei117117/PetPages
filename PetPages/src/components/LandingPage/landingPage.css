@@ -1,26 +1,20 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centers horizontally */
-  justify-content: center; /* Centers vertically */
-}
 .logo {
   width: 200px;
   height: auto;
-}
-.logo {
   padding: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #d1566aaa);
 }
 
-.text {
-  font-size: 2em;
+#text {
+  font-size: 1.7em;
   padding: 0.3em;
 }
+
 .email {
   margin-bottom: 20px;
   padding: 0.3em;
@@ -30,29 +24,31 @@
   padding: 10px;
   width: 250px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #d1566aaa;
   border-radius: 5px;
   margin-right: 10px;
 }
 
 .email-input:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #d1566aaa;
+  box-shadow: 0 0 5px rgba(183, 82, 92, 0.5); /* Add focus shadow */
 }
 
 .submit-button {
   padding: 10px 20px;
   font-size: 16px;
-  color: #fff;
-  background-color: #007bff;
+  color: #000000;
+  background-color: #f4eee9;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s; /* Add transform effect */
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: #d1566aaa;
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .submit-button:focus {
@@ -70,10 +66,26 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #d1566aaa;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.images {
+  display: flex; /* Use flexbox for a responsive layout */
+  flex-wrap: wrap; /* Allows images to wrap onto the next line if they don't fit */
+  justify-content: center; /* Center the images horizontally */
+  gap: 10px; /* Adds space between images */
+}
+
+.helper-image {
+  width: 100%; /* Make the images responsive */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 200px; /* Set a max width for the images */
+  border-radius: 8px; /* Optional: adds rounded corners */
 }
