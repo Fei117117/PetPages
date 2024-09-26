@@ -2,7 +2,7 @@ import "./landingPage.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import logo from "../../assets/logo.jpg";
+import Helper from "./Helper";
 
 function LandingPage() {
   const navigate = useNavigate();
@@ -50,24 +50,31 @@ function LandingPage() {
   };
 
   return (
-    <div className="container">
-      <img src={logo} alt="Logo" id="logo-landingPage" />
-      <h1 id="text-landingPage">✨Launching soon ...✨</h1>
-      <div id="email-landingPage">
-        <input
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={handleEmailChange}
-          id="email-input"
-          required
-        />
-        <button onClick={handleEmailSubmit} id="submit-button">
-          Notify Me
-        </button>
-        <p>{message}</p>
+    <div>
+      <div className="page-background">
+        <div className="container">
+          {/* <img src={logo} alt="Logo" id="logo-landingPage" /> */}
+          <h1 className="title">PetPages</h1>
+          <h2 id="text-landingPage">&quot;We Still Talk About You&quot;</h2>
+          <div id="email-landingPage">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={handleEmailChange}
+              id="email-input"
+              required
+            />
+            <button onClick={handleEmailSubmit} id="submit-button">
+              Notify Me
+            </button>
+            <p>{message}</p>
+          </div>
+          <button className="helper" onClick={goToHelperPage}>
+            What is PetPages
+          </button>
+        </div>
       </div>
-      <button onClick={goToHelperPage}>What is PetPages</button>
     </div>
   );
 }
