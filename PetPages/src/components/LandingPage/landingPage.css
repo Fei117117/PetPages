@@ -9,42 +9,30 @@
   height: 100vh;
 }
 
-/* #logo-landingPage {
-  width: 200px;
-  height: auto;
-  padding: 1em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-#logo-landingPage:hover {
-  filter: drop-shadow(0 0 2em #d1566aaa);
-} */
-
 .title {
   font-family: "Cormorant Garamond", "Crimson Text", serif;
-  font-size: 4.5em;
-  color: #8fb6d4; /* You can also adjust the color to a muted gray for a sadder feel */
+  font-size: 12vw;
+  color: #8fb6d4;
 }
 .title-helper {
   font-family: "Cormorant Garamond", "Crimson Text", serif;
-  font-size: 4em;
-  color: #0f334f; /* You can also adjust the color to a muted gray for a sadder feel */
+  font-size: 5vw;
+  color: #0f334f;
 }
 
 #text-landingPage {
   font-family: "Cormorant Garamond", "Crimson Text", serif;
-  font-size: 1.5em;
-  padding: 0.7em;
-  color: #8fb6d4; /* You can also adjust the color to a muted gray for a sadder feel */
+  font-size: 2.5vw;
+  padding: 1vw;
+  color: #8fb6d4;
 }
 
 #email-landingPage {
-  position: absolute; /* Use absolute positioning */
-  top: 40px; /* Distance from the bottom */
-  right: 20px; /* Distance from the left */
-  display: flex; /* Use flexbox for alignment */
-  gap: 10px; /* Space between input and button */
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 #email-input {
@@ -61,13 +49,13 @@
 #email-input:focus {
   outline: none;
   border-color: #8fb6d4;
-  box-shadow: 0 0 5px rgba(59, 122, 229, 0.5); /* Add focus shadow */
+  box-shadow: 0 0 5px rgba(59, 122, 229, 0.5);
 }
 .helper {
-  position: absolute; /* Use absolute positioning */
-  bottom: 40px; /* Distance from the bottom */
-  left: 40px; /* Distance from the left */
-  display: flex; /* Use flexbox for alignment */
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  display: flex;
 }
 
 button {
@@ -80,48 +68,64 @@ button {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s; /* Add transform effect */
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 button:hover {
   background-color: #bcd4e6;
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05);
 }
 
 button:focus {
   outline: none;
 }
 
-.images {
-  display: flex; /* Use flexbox for a responsive layout */
-  flex-wrap: wrap; /* Allows images to wrap onto the next line if they don't fit */
-  justify-content: center; /* Center the images horizontally */
-  gap: 60px; /* Adds space between images */
-}
-
-.helper-image {
-  width: 100%; /* Make the images responsive */
-  height: auto; /* Maintain the aspect ratio */
-  max-width: 200px; /* Set a max width for the images */
-  border-radius: 8px; /* Optional: adds rounded corners */
+#text-helper {
+  font-family: "Cormorant Garamond", "Crimson Text", serif;
+  font-size: 2vw;
+  color: #0f334f;
+  line-height: 1.3;
 }
 
 /* Mobile-specific adjustments */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  .page-background {
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .page-background1 {
+    background-size: 600%; /* Zoom in on the background image */
+    background-position: bottom 400%; /* Centered horizontally and 70% down vertically */
+    width: 100vw;
+    height: 100vh;
+  }
   .title {
-    font-size: 3em; /* Smaller size for mobile */
+    font-size: 18vw;
+    padding-top: 4vh;
   }
 
   #text-landingPage {
-    font-size: 1.2em; /* Smaller size for mobile */
+    font-size: 5.5vw;
+    padding-top: 0.3vh;
+  }
+
+  .title-helper {
+    font-size: 10vw;
+  }
+
+  #text-helper {
+    font-size: 5.5vw;
+    padding-top: 0.3vh;
   }
 
   #email-input {
-    width: 80%; /* Wider input on mobile */
+    width: 50vw;
   }
 
   #email-landingPage {
-    flex-direction: column; /* Stack input and button */
-    align-items: center; /* Center align */
+    align-items: center;
+    padding-top: 3vh;
   }
 }
