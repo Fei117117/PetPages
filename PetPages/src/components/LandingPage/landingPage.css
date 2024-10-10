@@ -11,20 +11,30 @@
 
 .title {
   font-family: "Cormorant Garamond", "Crimson Text", serif;
-  font-size: 12vw;
+  font-size: 10vw;
   color: #8fb6d4;
+  padding: 4vh;
 }
 .title-helper {
   font-family: "Cormorant Garamond", "Crimson Text", serif;
   font-size: 5vw;
   color: #0f334f;
+  padding: 4vh;
 }
 
 #text-landingPage {
   font-family: "Cormorant Garamond", "Crimson Text", serif;
   font-size: 2.5vw;
-  padding: 1vw;
+  padding: 7vw;
   color: #8fb6d4;
+}
+
+#text-helper {
+  font-family: "Cormorant Garamond", "Crimson Text", serif;
+  font-size: 2vw;
+  color: #0f334f;
+  line-height: 1.3;
+  padding: 4vh;
 }
 
 #email-landingPage {
@@ -80,13 +90,6 @@ button:focus {
   outline: none;
 }
 
-#text-helper {
-  font-family: "Cormorant Garamond", "Crimson Text", serif;
-  font-size: 2vw;
-  color: #0f334f;
-  line-height: 1.3;
-}
-
 /* Mobile-specific adjustments */
 @media (max-width: 600px) {
   .page-background {
@@ -102,22 +105,32 @@ button:focus {
     height: 100vh;
   }
   .title {
-    font-size: 18vw;
-    padding-top: 4vh;
+    position: absolute; /* Absolute positioning */
+    top: 20%; /* Move down to the middle */
+    left: 40%; /* Move right to the middle */
+    transform: translate(-50%, -50%); /* Center the element */
+    font-size: 16vw; /* Responsive font size */
+    padding: 12vh;
   }
 
   #text-landingPage {
-    font-size: 5.5vw;
-    padding-top: 0.3vh;
+    position: absolute; /* Absolute positioning */
+    top: 29%; /* Move down slightly below the title */
+    left: 40%; /* Move right to the middle */
+    transform: translate(-60%, -50%); /* Center the element */
+    font-size: 4vw; /* Responsive font size */
+    line-height: 1.5;
   }
 
   .title-helper {
-    font-size: 10vw;
+    font-size: 8vw;
+    line-height: 1.2;
   }
 
   #text-helper {
-    font-size: 5.5vw;
+    font-size: 4vw;
     padding-top: 0.3vh;
+    line-height: 1.2;
   }
 
   #email-input {
