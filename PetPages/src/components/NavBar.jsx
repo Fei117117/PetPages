@@ -13,7 +13,7 @@ const Navbar = () => {
     <header>
       <nav className="navbar">
         <div className="logo">
-          <img src="src/assets/logo.png" alt="Logo" id="logo" />
+          <img src=".././assets/logo.png" alt="Logo" id="logo" />
         </div>
         <div className="hamburger" onClick={toggleMenu}>
           <div></div>
