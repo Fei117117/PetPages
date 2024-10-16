@@ -1,14 +1,14 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import LandingPage from "./components/LandingPage/LandingPage";
-import Helper from "./components/LandingPage/Helper";
+import LandingPage from "./pages/LandingPage";
+import Navbar from "./components/NavBar";
 
 function App() {
   return (
     <Router>
       <div>
+        <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/helper" element={<Helper />} />
         </Routes>
       </div>
     </Router>

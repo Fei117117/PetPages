@@ -1,0 +1,90 @@
+.page-background {
+  background-image: url(".././assets/bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Use min-height to ensure the background covers the entire height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+  padding: 20px;
+}
+
+.title {
+  font-family: "Cormorant Garamond", "Crimson Text", serif;
+  font-size: 6vw;
+  color: #8fb6d4;
+  padding: 5vh 2vw; /* Adjust padding for better spacing */
+  text-align: center; /* Center the title */
+}
+
+#email-landingPage {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+}
+
+#email-input {
+  background-color: #000000;
+  color: #bcd4e6;
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border: 1px solid #8fb6d4;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#email-input:focus {
+  outline: none;
+  border-color: #8fb6d4;
+  box-shadow: 0 0 5px rgba(59, 122, 229, 0.5);
+}
+
+button {
+  padding: 10px 15px; /* Adjust button padding for better click area */
+  font-size: 16px;
+  color: #000000;
+  background-color: #8fb6d4;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #bcd4e6;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Existing media query for tablets and small screens */
+@media (max-width: 768px) {
+  .title {
+    font-size: 4vw; /* Adjust title font size for smaller screens */
+    padding: 2vh 2vw;
+    margin-top: 20vh; /* Space title appropriately */
+  }
+
+  #email-input {
+    width: 60vw; /* Make input width responsive */
+  }
+
+  #email-landingPage {
+    flex-direction: column;
+    gap: 15px; /* Increase space between input and button */
+    padding-top: 1vh;
+  }
+
+  button {
+    width: 60vw; /* Make button full width on small screens */
+  }
+}

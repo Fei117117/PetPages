@@ -1,17 +1,11 @@
-import "./landingPage.css";
-import { useNavigate } from "react-router-dom";
+import "./Intro.css";
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import Helper from "./Helper";
 
 function LandingPage() {
-  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const goToHelperPage = () => {
-    navigate("/Helper");
-  };
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -53,9 +47,7 @@ function LandingPage() {
     <div>
       <div className="page-background">
         <div className="container">
-          {/* <img src={logo} alt="Logo" id="logo-landingPage" /> */}
-          <h1 className="title">PetPages</h1>
-          <h2 id="text-landingPage">&quot;We Still Talk About You&quot;</h2>
+          <h1 className="title">&quot;We Still Talk About You&quot;</h1>
           <div id="email-landingPage">
             <input
               type="email"
@@ -70,9 +62,6 @@ function LandingPage() {
             </button>
             <p>{message}</p>
           </div>
-          <button className="helper" onClick={goToHelperPage}>
-            What is PetPages
-          </button>
         </div>
       </div>
     </div>
