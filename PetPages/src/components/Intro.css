@@ -67,24 +67,21 @@ button:focus {
 }
 
 /* Existing media query for tablets and small screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .title {
-    font-size: 4vw; /* Adjust title font size for smaller screens */
-    padding: 2vh 2vw;
-    margin-top: 20vh; /* Space title appropriately */
-  }
-
-  #email-input {
-    width: 60vw; /* Make input width responsive */
+    font-size: 5vw !important;
+    padding: 4vw !important;
+    margin-top: 2vh !important;
+    text-align: center;
   }
 
   #email-landingPage {
     flex-direction: column;
     gap: 15px; /* Increase space between input and button */
-    padding-top: 1vh;
+    margin-top: -500px;
   }
 
   button {
-    width: 60vw; /* Make button full width on small screens */
+    width: 50vw; /* Make button full width on small screens */
   }
 }

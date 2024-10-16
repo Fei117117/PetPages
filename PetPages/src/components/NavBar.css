@@ -56,31 +56,61 @@ header {
   height: 3px;
   background-color: white;
   margin: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-@media (max-width: 768px) {
+/* Mobile Styles */
+@media (max-width: 600px) {
   .nav-links {
-    display: none; /* Hide nav links initially */
+    display: none; /* Hide links by default */
     flex-direction: column; /* Stack links vertically */
     position: absolute;
-    top: 60px; /* Adjust based on your navbar height */
+    top: 60px; /* Adjust based on navbar height */
     left: 0;
     right: 0;
     background-color: #8fb6d4; /* Match navbar background */
-    padding: 10px 0;
+    padding: 20px 0; /* Add padding for better spacing */
+    z-index: 1; /* Ensure it appears above content */
+    border-top: 2px solid #fff; /* Optional: Add border to separate menu */
   }
 
   .nav-links.active {
     display: flex; /* Show links when active */
   }
 
-  .logo img {
-    width: 220px; /* Smaller logo for mobile */
-    top: -1vw;
-    left: -5vw;
+  .nav-links li {
+    margin: 10px 0; /* Add spacing between links */
+    text-align: center;
   }
 
+  .nav-links a {
+    font-size: 5vw; /* Make links larger for mobile */
+    padding: 10px; /* Add padding for better clickability */
+  }
+
+  /* Adjust logo size */
+  .logo img {
+    width: 250px;
+    margin-left: -5vw;
+  }
+
+  /* Show hamburger icon on mobile */
   .hamburger {
-    display: flex; /* Show hamburger menu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Hamburger icon animations */
+  .hamburger.active div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); /* Top line transforms into an X */
+  }
+
+  .hamburger.active div:nth-child(2) {
+    opacity: 0; /* Middle line disappears */
+  }
+
+  .hamburger.active div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); /* Bottom line transforms into an X */
   }
 }
