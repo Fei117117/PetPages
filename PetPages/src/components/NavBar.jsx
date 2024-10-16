@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import logo from ".././assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
     <header>
       <nav className="navbar">
         <div className="logo">
-          <img src=".././assets/logo.png" alt="Logo" id="logo" />
+          <img src={logo} alt="Logo" id="logo" />
         </div>
         <div className="hamburger" onClick={toggleMenu}>
           <div></div>
